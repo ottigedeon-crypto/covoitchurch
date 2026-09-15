@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Covoit'Church",
+    "slug": "covoitchurch",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "covoitchurch",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#032451",
+    "ios": {
+      "bundleIdentifier": "com.covoitchurch.app",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Covoit'Church utilise votre position pour vous montrer aux conducteurs de votre eglise pendant la duree que vous choisissez."
+      }
+    },
+    "android": {
+      "package": "com.covoitchurch.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#032451"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Covoit'Church utilise votre position pour vous montrer aux conducteurs de votre eglise pendant la duree que vous choisissez."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#0BB39B"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 180,
+          "backgroundColor": "#032451"
+        }
+      ],
+      "expo-font",
+      "expo-image",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/icon.png",
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

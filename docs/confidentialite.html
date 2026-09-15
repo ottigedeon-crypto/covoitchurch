@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — Covoit'Church</title>
+<meta name="description" content="Politique de confidentialité de Covoit'Church : quelles données sont collectées, qui les voit, et comment les supprimer.">
+<style>
+  :root{
+    --bleu:#032451; --bleu-clair:#1B4A8F; --bleu-pale:#E8EEF7;
+    --encre:#0D1B2A; --encre-douce:#54617A; --trait:#E3E8F0; --fond:#F8FAFD;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--fond); color:var(--encre);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .page{max-width:760px; margin:0 auto; padding:0 22px 80px}
+  header{padding:56px 0 28px; border-bottom:1px solid var(--trait)}
+  .marque{display:flex; align-items:center; gap:12px; margin-bottom:26px}
+  .pastille{
+    width:42px; height:42px; border-radius:13px; background:var(--bleu);
+    display:flex; align-items:center; justify-content:center; color:#fff;
+    font-weight:800; font-size:19px; flex:none;
+  }
+  .marque span{font-weight:800; font-size:17px}
+  h1{font-size:clamp(30px,5vw,40px); line-height:1.1; margin:0; letter-spacing:-.02em}
+  .maj{color:var(--encre-douce); font-size:14.5px; margin-top:10px}
+  .chapeau{
+    background:var(--bleu-pale); border-radius:14px; padding:18px 20px;
+    margin-top:26px; font-size:16px;
+  }
+  h2{font-size:21px; margin:38px 0 0; letter-spacing:-.01em}
+  p{margin:12px 0 0; color:var(--encre-douce)}
+  ul{margin:12px 0 0; padding-left:20px; color:var(--encre-douce)}
+  li{margin:7px 0}
+  a{color:var(--bleu-clair); font-weight:600}
+  footer{margin-top:46px; padding-top:22px; border-top:1px solid var(--trait); color:var(--encre-douce); font-size:14.5px}
+  @media (prefers-color-scheme:dark){
+    :root{--fond:#0B1220; --encre:#ECEFF5; --encre-douce:#9AA6BC; --trait:#22304A; --bleu-pale:#132039; --bleu-clair:#7FB0F0}
+    .pastille{background:var(--bleu-clair); color:#08172E}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="marque">
+      <div class="pastille">C</div>
+      <span>Covoit'Church</span>
+    </div>
+    <h1>Confidentialité</h1>
+    <p class="maj">Dernière mise à jour : 4 septembre 2026</p>
+    <div class="chapeau">
+      Covoit'Church existe pour que personne ne renonce à venir faute de voiture.
+      Les seules informations demandées sont celles qui servent à cela.
+    </div>
+  </header>
+
+  <h2>Ce que nous collectons</h2>
+  <p>Uniquement ce qui sert à te mettre en relation avec quelqu'un pour aller à l'église. Rien d'autre.</p>
+  <ul>
+    <li>Ton nom et ton prénom, pour que les autres membres te reconnaissent</li>
+    <li>Ton adresse email, qui sert d'identifiant de connexion</li>
+    <li>Ton numéro de téléphone, pour être joignable le jour du trajet</li>
+    <li>Ton adresse de domicile, pour proposer les trajets qui passent près de chez toi</li>
+    <li>Ta position, uniquement quand tu appuies sur « Je suis là » et pendant la durée que tu choisis</li>
+    <li>L'église à laquelle tu es rattaché</li>
+  </ul>
+
+  <h2>Qui voit quoi</h2>
+  <p>Les autres membres voient ton nom, et rien de plus par défaut.</p>
+  <p>Ton numéro de téléphone n'apparaît qu'une fois une place acceptée, et seulement à la personne avec qui tu fais ce trajet.</p>
+  <p>Ta position sur la carte n'est visible que pendant la durée que tu as fixée, et seulement par les membres de ton église. Elle disparaît ensuite.</p>
+  <p>Aux points de rassemblement, seul le nombre de personnes qui attendent est partagé — jamais leur identité.</p>
+  <p>Ton adresse de domicile n'est jamais affichée : elle sert uniquement à calculer des distances.</p>
+
+  <h2>Ce que nous ne faisons pas</h2>
+  <p>Aucune donnée n'est vendue, louée ni transmise à des fins publicitaires. Il n'y a ni traceur publicitaire, ni revente de position, ni profilage.</p>
+  <p>Il n'existe aucun suivi permanent : hors des périodes que tu déclenches toi-même, l'application ne connaît pas ta position.</p>
+
+  <h2>Où sont les données</h2>
+  <p>Elles sont hébergées par Supabase, sur des serveurs situés dans l'Union européenne. Les positions déclarées sont effacées automatiquement à l'expiration du délai que tu as choisi.</p>
+  <p>Les adresses saisies sont converties en coordonnées par le service OpenStreetMap Nominatim ; seule l'adresse est transmise, jamais ton identité.</p>
+
+  <h2>Tes droits</h2>
+  <p>Tu peux consulter et modifier tes informations à tout moment depuis l'écran Profil de l'application.</p>
+  <p>Tu peux supprimer ton compte depuis l'application, sans passer par nous : profil, trajets, demandes, messages, historique et position sont effacés définitivement. Les points de rassemblement et événements créés pour ton église sont conservés, mais ne portent plus ton nom.</p>
+  <p>Conformément au RGPD, tu disposes également d'un droit d'accès, de rectification, d'opposition et de portabilité.</p>
+
+  <h2>Notifications</h2>
+  <p>Si tu les autorises, l'application enregistre un identifiant technique de ton appareil pour t'envoyer des alertes — un trajet proposé vers ton église, une place acceptée. Cet identifiant ne permet pas de te localiser. Tu peux les couper depuis les réglages de ton téléphone, et l'identifiant est effacé avec ton compte.</p>
+
+  <h2>Les mineurs</h2>
+  <p>L'application n'est pas destinée aux enfants de moins de 15 ans sans l'accord de leurs parents. Un mineur ne devrait pas monter dans la voiture d'un inconnu : l'application ne remplace pas la vigilance des familles et des responsables d'église.</p>
+
+  <h2>Nous écrire</h2>
+  <p>Pour toute question sur tes données, ou pour exercer tes droits :
+    <a href="mailto:contact@covoitchurch.com">contact@covoitchurch.com</a>.</p>
+
+  <footer>
+    Covoit'Church — <a href="https://covoitchurch.com">covoitchurch.com</a>
+  </footer>
+</div>
+</body>
+</html>
