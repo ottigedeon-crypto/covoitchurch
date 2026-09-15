@@ -169,9 +169,17 @@ erreur.
    (`#032451`), avec une petite croix blanche dans un cercle marine cerclé de
    violet (`#5B2D8E`, l'accent déjà présent dans `lib/theme.ts`) — l'idée
    d'un lieu de culte qu'on rejoint. Remplace l'ancienne boussole dans
-   `assets/icon.png` (1024×1024, régénéré en PNG). C'est l'icône, l'icône
-   adaptative Android et le splash screen qui en dépendent tous, via
-   `app.json` — un seul fichier à changer suffit si tu veux encore l'ajuster.
+   `assets/icon.png` (1024×1024, régénéré en PNG). C'est l'icône et l'icône
+   adaptative Android qui en dépendent, via `app.json`.
+6. **Écran de démarrage (splash) avec le nom de l'application** : nouveau
+   fichier `assets/splash.png`, avec le même pin, et en dessous le texte
+   « Covoit'Church » et « Personne ne rentre seul. » directement dessinés
+   dans l'image (un écran de démarrage natif ne peut afficher qu'une image
+   fixe, pas du texte dynamique — le texte est donc « gravé » dedans).
+   Branché dans `app.json` (plugin `expo-splash-screen`). C'est ce qui
+   s'affiche en tout premier à l'ouverture de l'application, avant même que
+   l'animation de la voiture ne démarre — le nom de l'app est donc visible
+   dès le lancement, comme demandé.
 
 ---
 
